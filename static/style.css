@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(202, 136, 147), orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #243b55;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-group input:focus {
+    border-color: #243b55;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #141e30;
+}
+
+.bottom-text {
+    text-align: center;
+    margin-top: 25px;
+    color: #555;
+}
+
+.bottom-text a {
+    color: #243b55;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bottom-text a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    background: #ffe5e5;
+    color: #d00000;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.success {
+    background: #e2f8e8;
+    color: #167a35;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard {
+    text-align: center;
+}
+
+.dashboard h2 {
+    color: #243b55;
+    margin: 20px 0 10px;
+}
+
+.welcome-icon {
+    width: 65px;
+    height: 65px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: #d9f8e2;
+    color: #159447;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-email {
+    color: #243b55;
+    font-weight: bold;
+    margin: 20px 0;
+    word-break: break-word;
+}
+
+.logout-btn {
+    display: block;
+    background: #243b55;
+    color: white;
+    padding: 13px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background: #141e30;
+}
+
+@media (max-width: 480px) {
+    .form-box {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

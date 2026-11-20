@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', path='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="form-box">
+
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Login to your account</p>
+
+        {% if request.query_params.get('registered') == 'true' %}
+            <p class="success">Account created successfully! Please login.</p>
+        {% endif %}
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        <form action="/login" method="POST">
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password"
+                       name="password"
+                       placeholder="Enter your password"
+                       required>
+            </div>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p class="bottom-text">
+            Don't have an account?
+            <a href="/register">Register</a>
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
